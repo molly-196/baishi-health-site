@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OEM/ODM服务 - 佰氏健康集团</title>
+    <meta name="description" content="佰氏健康全链路OEM/ODM服务：精英服务团队、商业赋能、样品极速交付、品牌赋能、全案设计、商学院陪跑、AI智能赋能、复星国药健康兜底。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .oem-hero { background: linear-gradient(135deg, #0d1b0f, #1B5E20); }
+        .oem-detail { padding: 100px 0; }
+        .oem-detail:nth-child(odd) { background: #f7f9f7; }
+        .oem-detail-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .oem-detail:nth-child(odd) .oem-detail-inner { direction: rtl; }
+        .oem-detail:nth-child(odd) .oem-detail-inner > * { direction: ltr; }
+        .oem-icon-box {
+            width: 100%; height: 320px;
+            border-radius: var(--radius);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 100px;
+            box-shadow: var(--shadow-lg);
+        }
+        .oem-detail-text h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+        .oem-detail-text p { font-size: 15px; color: var(--text-second); line-height: 1.9; margin-bottom: 16px; }
+        .oem-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .oem-tag {
+            background: rgba(46,125,50,0.08); color: var(--primary);
+            padding: 6px 14px; border-radius: 8px;
+            font-size: 13px; font-weight: 600;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 36px 24px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--primary);
+        }
+        .service-icon { font-size: 40px; margin-bottom: 16px; }
+        .service-card h4 { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+        .service-card p { font-size: 13px; color: var(--text-second); line-height: 1.8; }
+        .ai-section { padding: 100px 0; background: linear-gradient(135deg, #1a237e, #0d47a1); color: #fff; }
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+        .ai-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: var(--radius);
+            padding: 32px 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.12);
+        }
+        .ai-card-icon { font-size: 36px; margin-bottom: 12px; }
+        .ai-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+        .ai-card p { font-size: 12px; opacity: 0.75; line-height: 1.7; }
+        @media (max-width: 768px) {
+            .oem-detail-inner { grid-template-columns: 1fr !important; gap: 32px; }
+            .oem-detail:nth-child(odd) .oem-detail-inner { direction: ltr; }
+            .oem-icon-box { height: 240px; font-size: 72px; }
+            .service-grid { grid-template-columns: 1fr; }
+            .ai-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-contact">
+                    <span>📞 <span data-cms="phone">150-1180-3999</span></span>
+                    <span>📧 <span data-cms="email">service@baishihealth.com</span></span>
+                </div>
+                <div class="top-links">
+                    <a href="en.html">English</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">佰</div>
+                    <div class="logo-text">
+                        <span class="logo-main">佰氏健康集团</span>
+                        <span class="logo-sub">BAISHI HEALTH GROUP</span>
+                    </div>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="oem-service.html" class="active">OEM/ODM服务</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="factory.html">工厂实力</a></li>
+                    <li><a href="clients.html">合作客户</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero oem-hero">
+        <div class="container">
+            <h1>全链路 OEM/ODM 服务</h1>
+            <p>不只是代工，更是从选品到成交的全生命周期陪跑伙伴</p>
+        </div>
+    </section>
+
+    <!-- 精英服务团队 -->
+    <section class="oem-detail fade-up">
+        <div class="container">
+            <div class="oem-detail-inner">
+                <div class="oem-icon-box" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9);">👥</div>
+                <div class="oem-detail-text">
+                    <span class="section-tag">01 · 服务团队</span>
+                    <h3>精英服务团队 · 前期深度评估</h3>
+                    <p>深入了解客户属性、团队基因及终端用户需求，量身定制产品方案。</p>
+                    <p>合作后不是一个人为您服务，而是整个团队协同：设计、采购、客服、销售、研发、法务、培训、新媒体等多部门联动，确保每个环节高效执行。</p>
+                    <div class="oem-tags">
+                        <span class="oem-tag">客户需求评估</span>
+                        <span class="oem-tag">团队基因分析</span>
+                        <span class="oem-tag">300+人服务团队</span>
+                        <span class="oem-tag">多部门协同</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商业赋能 -->
+    <section class="oem-detail fade-up">
+        <div class="container">
+            <div class="oem-detail-inner">
+                <div class="oem-icon-box" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb);">📈</div>
+                <div class="oem-detail-text">
+                    <span class="section-tag">02 · 商业赋能</span>
+                    <h3>商业模式梳理 · 定制专属方案</h3>
+                    <p>结合客户资源与市场需求，精准梳理适配的盈利模式，明确增长路径与核心发力点。</p>
+                    <p>辅助客户设计可转化落地的商业模式，从产品落地到渠道布局，从团队搭建到运营管理，专人专项全程跟进。</p>
+                    <div class="oem-tags">
+                        <span class="oem-tag">商业模式定制</span>
+                        <span class="oem-tag">盈利路径梳理</span>
+                        <span class="oem-tag">落地执行指导</span>
+                        <span class="oem-tag">增长策略</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 样品极速交付 -->
+    <section class="oem-detail fade-up">
+        <div class="container">
+            <div class="oem-detail-inner">
+                <div class="oem-icon-box" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);">⚡</div>
+                <div class="oem-detail-text">
+                    <span class="section-tag">03 · 极速打样</span>
+                    <h3>当天需求 · 当天打样 · 当天确认</h3>
+                    <p>工程师团队提供高效服务，实现当天需求、当天打样、当天确认，最快7天出样，30天批量交付。</p>
+                    <p>1000+成熟配方储备，10,000+配方库，可快速匹配成熟配方，缩短上市周期。</p>
+                    <div class="oem-tags">
+                        <span class="oem-tag">当天打样</span>
+                        <span class="oem-tag">7天出样</span>
+                        <span class="oem-tag">30天交付</span>
+                        <span class="oem-tag">1000+配方</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 品牌赋能 -->
+    <section class="oem-detail fade-up">
+        <div class="container">
+            <div class="oem-detail-inner">
+                <div class="oem-icon-box" style="background: linear-gradient(135deg, #f3e5f5, #e1bee7);">🛡️</div>
+                <div class="oem-detail-text">
+                    <span class="section-tag">04 · 品牌赋能</span>
+                    <h3>双品牌战略 · 大牌正品授权</h3>
+                    <p>与南京同仁堂、白云山、国药集团等20+一线大牌深度协同，大牌正品授权背书，降低市场教育成本。</p>
+                    <p>法务部与注册部协同进行知识产权保护与商标授权，3000+现货单品可分销，全国控价保护杜绝乱市。</p>
+                    <div class="oem-tags">
+                        <span class="oem-tag">20+大牌背书</span>
+                        <span class="oem-tag">商标授权</span>
+                        <span class="oem-tag">3000+现货</span>
+                        <span class="oem-tag">全国控价</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 全案设计 -->
+    <section class="oem-detail fade-up">
+        <div class="container">
+            <div class="oem-detail-inner">
+                <div class="oem-icon-box" style="background: linear-gradient(135deg, #e0f2f1, #b2dfdb);">🎨</div>
+                <div class="oem-detail-text">
+                    <span class="section-tag">05 · 全案设计</span>
+                    <h3>十余支创意团队 · 包材开模最多</h3>
+                    <p>拥有十余支创意设计团队，为产品设计与宣传推广提供全方位支持，包材开模数量行业最多。</p>
+                    <p>针对客户的包装盒，提供多样化设计风格参考，适配新零售、直销、美容院线、电商等不同渠道场景。</p>
+                    <div class="oem-tags">
+                        <span class="oem-tag">创意设计</span>
+                        <span class="oem-tag">包材开模最多</span>
+                        <span class="oem-tag">全渠道适配</span>
+                        <span class="oem-tag">宣传推广支持</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商学院陪跑 -->
+    <section class="oem-detail fade-up">
+        <div class="container">
+            <div class="oem-detail-inner">
+                <div class="oem-icon-box" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);">🎓</div>
+                <div class="oem-detail-text">
+                    <span class="section-tag">06 · 商学院陪跑</span>
+                    <h3>三维陪跑体系 · 全年培训300+场</h3>
+                    <p><strong>佰创模式商学院：</strong>聚焦连锁模式、增长逻辑，打造可复制的商业模型。</p>
+                    <p><strong>产品专业商学院：</strong>深耕产品知识、功效解析，打造专业的产品讲解与服务团队。</p>
+                    <p><strong>成交实战商学院：</strong>专注获客技巧、成交话术，提升团队转化效率与业绩能力。</p>
+                    <p>产品PPT制作、百问百答、线上线下培训一站式解决，全年培训讲课超过300场。</p>
+                    <div class="oem-tags">
+                        <span class="oem-tag">佰创模式商学院</span>
+                        <span class="oem-tag">产品专业商学院</span>
+                        <span class="oem-tag">成交实战商学院</span>
+                        <span class="oem-tag">全年300+场培训</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8大服务总览 -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">服务总览</span>
+                <h2 class="section-title">全链路 8 大服务体系</h2>
+            </div>
+            <div class="service-grid">
+                <div class="service-card fade-up">
+                    <div class="service-icon">👥</div>
+                    <h4>精英服务团队</h4>
+                    <p>前期客户评估，深入了解客户属性、团队基因及终端用户需求</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">📈</div>
+                    <h4>商业赋能</h4>
+                    <p>定制专属产品方案，辅助客户设计可转化落地的商业模式</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">⚡</div>
+                    <h4>样品极速交付</h4>
+                    <p>当天需求、当天打样、当天确认，最快7天出样</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">🛡️</div>
+                    <h4>品牌赋能</h4>
+                    <p>法务部与注册部协同，知识产权保护与商标授权</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">🎨</div>
+                    <h4>全案设计</h4>
+                    <p>十余支创意设计团队，包材开模行业最多</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">🎓</div>
+                    <h4>商学院陪跑</h4>
+                    <p>产品百问百答、线上线下培训，全年300+场</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">🤖</div>
+                    <h4>AI智能赋能</h4>
+                    <p>AI短视频/文案/数字人一键生成，零基础做爆款内容</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">🏥</div>
+                    <h4>复星国药健康兜底</h4>
+                    <p>千万级特药保障、24小时在线家医、全球找药通道</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI智能赋能 -->
+    <section class="ai-section">
+        <div class="container">
+            <div class="section-header" style="color:#fff;">
+                <span class="section-tag" style="background:rgba(255,255,255,0.15); color:#fff;">AI赋能</span>
+                <h2 class="section-title" style="color:#fff;">AI智能全域赋能</h2>
+                <p class="section-desc" style="color:rgba(255,255,255,0.7);">零基础做爆款内容 · 高效获客 · 合规运营</p>
+            </div>
+            <div class="ai-grid">
+                <div class="ai-card fade-up">
+                    <div class="ai-card-icon">🎬</div>
+                    <h4>AI短视频/文案</h4>
+                    <p>一键生成爆款短视频脚本和文案，零基础也能做内容</p>
+                </div>
+                <div class="ai-card fade-up">
+                    <div class="ai-card-icon">🤖</div>
+                    <h4>AI数字人</h4>
+                    <p>数字人主播24小时不间断直播，降低人力成本</p>
+                </div>
+                <div class="ai-card fade-up">
+                    <div class="ai-card-icon">📱</div>
+                    <h4>AI探店码</h4>
+                    <p>智能探店码系统，高效获客、合规运营</p>
+                </div>
+                <div class="ai-card fade-up">
+                    <div class="ai-card-icon">📝</div>
+                    <h4>AI招商文案</h4>
+                    <p>自动生成招商文案，AI违规筛查，保障内容合规</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #2E7D32, #1565C0);">
+        <div class="container" style="text-align:center; color:#fff;">
+            <h2 style="font-size:clamp(24px,3.5vw,40px); font-weight:700; margin-bottom:16px;">立即开启OEM/ODM合作</h2>
+            <p style="font-size:16px; opacity:0.85; margin-bottom:32px;">专属项目经理将在24小时内与您联系，提供免费配方咨询和打样服务</p>
+            <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+                <a href="tel:150-1180-3999" class="btn btn-outline" style="border-color:rgba(255,255,255,0.5); color:#fff;">📞 拨打 150-1180-3999</a>
+                <a href="contact.html" class="btn btn-primary">📧 发送邮件咨询</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">佰</div>
+                        <span>佰氏健康集团</span>
+                    </div>
+                    <p>24年深耕大健康，8大生产基地，全链路智慧型智造基地。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="factory.html">工厂实力</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 广州市白云区鹤龙街康庄路1号龙溪中心6楼</li>
+                        <li>📞 150-1180-3999</li>
+                        <li>📧 service@baishihealth.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p>扫码关注官方微信，获取最新行业资讯</p>
+                    <div class="qr-placeholder">微信二维码</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 佰氏健康集团 版权所有 | <a href="en.html">English</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

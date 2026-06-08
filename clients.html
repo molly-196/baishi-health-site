@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合作客户 - 佰氏健康集团</title>
+    <meta name="description" content="佰氏健康集团已服务200+品牌客户，覆盖国内知名品牌、新锐品牌、跨境品牌、医美机构。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .clients-hero { background: linear-gradient(135deg, #1B5E20, #1565C0); }
+        .clients-list { padding: 100px 0; }
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .client-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 40px 24px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 140px;
+        }
+        .client-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+        .client-card span {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: 1px;
+        }
+        .testimonial-section { padding: 100px 0; background: #f7f9f7; }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin-top: 48px;
+        }
+        .testimonial-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 40px 32px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            font-size: 80px;
+            color: var(--primary-light);
+            position: absolute;
+            top: 10px;
+            left: 24px;
+            line-height: 1;
+            opacity: 0.3;
+        }
+        .testimonial-text {
+            font-size: 15px;
+            line-height: 1.9;
+            color: var(--text-second);
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .testimonial-avatar {
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-light), var(--accent-light));
+            display: flex; align-items: center; justify-content: center;
+            color: #fff; font-weight: 700; font-size: 18px;
+        }
+        .testimonial-name { font-size: 15px; font-weight: 700; }
+        .testimonial-title { font-size: 13px; color: var(--text-second); }
+        @media (max-width: 768px) {
+            .clients-grid { grid-template-columns: repeat(2, 1fr); }
+            .testimonial-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-contact">
+                    <span>📞 +86 150-1180-3999</span>
+                    <span>📧 <span data-cms="email">service@baishihealth.com</span></span>
+                </div>
+                <div class="top-links">
+                    <a href="en.html">English</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">佰</div>
+                    <div class="logo-text">
+                        <span class="logo-main">佰氏健康集团</span>
+                        <span class="logo-sub">BAISHI HEALTH GROUP</span>
+                    </div>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="factory.html">工厂实力</a></li>
+                    <li><a href="clients.html" class="active">合作客户</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero clients-hero">
+        <div class="container">
+            <h1>合作客户</h1>
+            <p>已服务200+品牌客户，品质值得信赖</p>
+        </div>
+    </section>
+
+    <section class="clients-list">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">合作客户</span>
+                <h2 class="section-title">200+品牌信赖之选</h2>
+                <p class="section-desc">覆盖国内知名品牌、新锐品牌、跨境品牌、医美机构</p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-card fade-up"><span>品牌客户 01</span></div>
+                <div class="client-card fade-up"><span>品牌客户 02</span></div>
+                <div class="client-card fade-up"><span>品牌客户 03</span></div>
+                <div class="client-card fade-up"><span>品牌客户 04</span></div>
+                <div class="client-card fade-up"><span>品牌客户 05</span></div>
+                <div class="client-card fade-up"><span>品牌客户 06</span></div>
+                <div class="client-card fade-up"><span>品牌客户 07</span></div>
+                <div class="client-card fade-up"><span>品牌客户 08</span></div>
+                <div class="client-card fade-up"><span>新锐品牌 01</span></div>
+                <div class="client-card fade-up"><span>新锐品牌 02</span></div>
+                <div class="client-card fade-up"><span>跨境品牌 01</span></div>
+                <div class="client-card fade-up"><span>医美机构 01</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">客户评价</span>
+                <h2 class="section-title">他们的选择，是最好的证明</h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-text">
+                        佰氏健康的研发响应速度超出预期，10,000+配方库让我们快速找到匹配的成熟配方，产品上市时间比原计划提前了2个月。
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">李</div>
+                        <div>
+                            <div class="testimonial-name">李女士</div>
+                            <div class="testimonial-title">某知名护肤品牌 产品总监</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-text">
+                        广州基地的产能保障让我们旺季完全不担心断货，GMP标准车间和全程质检让我们对品质非常放心。
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">王</div>
+                        <div>
+                            <div class="testimonial-name">王先生</div>
+                            <div class="testimonial-title">某新锐私密品牌 创始人</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-text">
+                        从配方开发到包装设计，佰氏一站式服务省去了我们大量协调成本，项目经理专业度高，沟通效率很高。
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">张</div>
+                        <div>
+                            <div class="testimonial-name">张女士</div>
+                            <div class="testimonial-title">某跨境健康品牌 运营总监</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-up">
+                    <div class="testimonial-text">
+                        合作3年，佰氏的产能和品质一直很稳定，批次之间差异极小，是我们长期信赖的OEM伙伴。
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">陈</div>
+                        <div>
+                            <div class="testimonial-name">陈先生</div>
+                            <div class="testimonial-title">某知名保健品品牌 供应链总监</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">佰</div>
+                        <span>佰氏健康集团</span>
+                    </div>
+                    <p>2009年成立于广州，专注大健康产业OEM/ODM一站式服务。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="factory.html">工厂实力</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 广州市白云区鹤龙街康庄路1号龙溪中心</li>
+                        <li>📞 150-1180-3999</li>
+                        <li>📧 service@baishihealth.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p>扫码关注官方微信</p>
+                    <div class="qr-placeholder">微信二维码</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 佰氏健康集团 版权所有 | <a href="en.html">English</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

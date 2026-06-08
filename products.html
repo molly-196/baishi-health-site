@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品中心 - 佰氏健康集团</title>
+    <meta name="description" content="佰氏健康四大核心板块：私密护理（剂型最全）、疼痛养护、眼部健康、二类医疗器械/特证，300+消字号/100+健字号/200+特证/160+二械批文。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .products-hero { background: linear-gradient(135deg, #1B5E20, #1565C0); }
+        .product-detail-section { padding: 80px 0; }
+        .product-detail-section:nth-child(odd) { background: #f7f9f7; }
+        .product-detail-inner {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .product-detail-section:nth-child(odd) .product-detail-inner { grid-template-columns: 1fr 300px; }
+        .product-detail-section:nth-child(odd) .product-detail-inner > div:first-child { order: 2; }
+        .product-detail-section:nth-child(odd) .product-detail-inner > div:last-child { order: 1; }
+        .product-icon-large {
+            width: 300px; height: 300px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 100px;
+            box-shadow: var(--shadow-lg);
+        }
+        .product-detail-text h3 { font-size: 26px; font-weight: 700; margin-bottom: 16px; }
+        .product-detail-text p { font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 12px; }
+        .product-features { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+        .product-feature-tag {
+            background: rgba(46,125,50,0.08); color: var(--primary);
+            padding: 6px 14px; border-radius: 8px;
+            font-size: 13px; font-weight: 600;
+        }
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 48px;
+        }
+        .cert-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 32px 20px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .cert-num {
+            font-size: 42px; font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cert-label { font-size: 14px; color: var(--text-second); margin-top: 8px; }
+        @media (max-width: 768px) {
+            .product-detail-inner { grid-template-columns: 1fr !important; gap: 32px; }
+            .product-detail-section:nth-child(odd) .product-detail-inner > div:first-child { order: 0; }
+            .product-detail-section:nth-child(odd) .product-detail-inner > div:last-child { order: 0; }
+            .product-icon-large { width: 200px; height: 200px; font-size: 64px; margin: 0 auto; }
+            .cert-grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-contact">
+                    <span>📞 <span data-cms="phone">150-1180-3999</span></span>
+                    <span>📧 <span data-cms="email">service@baishihealth.com</span></span>
+                </div>
+                <div class="top-links">
+                    <a href="en.html">English</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">佰</div>
+                    <div class="logo-text">
+                        <span class="logo-main">佰氏健康集团</span>
+                        <span class="logo-sub">BAISHI HEALTH GROUP</span>
+                    </div>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                    <li><a href="products.html" class="active">产品中心</a></li>
+                    <li><a href="factory.html">工厂实力</a></li>
+                    <li><a href="clients.html">合作客户</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero products-hero">
+        <div class="container">
+            <h1>产品中心</h1>
+            <p>四大核心板块 · 剂型最全 · 批文最全</p>
+        </div>
+    </section>
+
+    <!-- 合规资质总览 -->
+    <section class="section" style="padding: 60px 0 20px;">
+        <div class="container">
+            <div class="cert-grid fade-up">
+                <div class="cert-card">
+                    <div class="cert-num">300+</div>
+                    <div class="cert-label">消字号批文</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-num">100+</div>
+                    <div class="cert-label">健字号批文</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-num">200+</div>
+                    <div class="cert-label">国妆特证</div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-num">160+</div>
+                    <div class="cert-label">二类医疗器械</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 私密护理 -->
+    <section class="product-detail-section fade-up" id="intimate">
+        <div class="container">
+            <div class="product-detail-inner">
+                <div class="product-icon-large" style="background: linear-gradient(135deg, #fce4ec, #f8bbd0);">🌸</div>
+                <div class="product-detail-text">
+                    <span class="section-tag">核心板块 · 剂型最全</span>
+                    <h3>私密护理 OEM/ODM</h3>
+                    <p>佰氏健康在私密护理领域做到<strong>剂型最全</strong>，涵盖粉剂、片剂、胶囊、丸剂、水剂、凝胶、私密面膜、卫生巾、雪莲贴、乳腺贴、富勒烯散结膏等全剂型产品。</p>
+                    <p>功效覆盖基础清洁、基础保养、两性荷尔蒙、门店手法仪器、HPV辅助、盆骨闭合、阴道紧致等全场景，致力于打造私密专属配方，一品一方一专利，覆盖私密全周期护理解决方案。</p>
+                    <p><strong>日产能：私密凝胶 50万支/日</strong></p>
+                    <div class="product-features">
+                        <span class="product-feature-tag">粉剂/片剂/胶囊</span>
+                        <span class="product-feature-tag">私密凝胶/面膜</span>
+                        <span class="product-feature-tag">雪莲贴/乳腺贴</span>
+                        <span class="product-feature-tag">富勒烯散结膏</span>
+                        <span class="product-feature-tag">男性私密护理</span>
+                        <span class="product-feature-tag">一品一方一专利</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 疼痛养护 -->
+    <section class="product-detail-section fade-up" id="pain">
+        <div class="container">
+            <div class="product-detail-inner">
+                <div class="product-icon-large" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9);">💊</div>
+                <div class="product-detail-text">
+                    <span class="section-tag">核心板块</span>
+                    <h3>疼痛养护 OEM/ODM</h3>
+                    <p>面向颈椎痛、腰椎痛、关节痛等大众痛点，提供远红外贴膏、精油、理疗仪器等多元化产品方案，结合传统中医理念与现代科技。</p>
+                    <p>产品线覆盖家用和院线两大场景，<strong>日产能：胶囊 100万粒/日</strong>，满足不同渠道品牌需求。</p>
+                    <div class="product-features">
+                        <span class="product-feature-tag">远红外贴膏</span>
+                        <span class="product-feature-tag">精油按摩</span>
+                        <span class="product-feature-tag">理疗仪器</span>
+                        <span class="product-feature-tag">关节养护</span>
+                        <span class="product-feature-tag">健字号批文</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 眼部健康 -->
+    <section class="product-detail-section fade-up" id="eye">
+        <div class="container">
+            <div class="product-detail-inner">
+                <div class="product-icon-large" style="background: linear-gradient(135deg, #e3f2fd, #bbdefb);">👁️</div>
+                <div class="product-detail-text">
+                    <span class="section-tag">核心板块</span>
+                    <h3>眼部健康 OEM/ODM</h3>
+                    <p>专注眼部护理和视康产品，联合专业研究院开发，覆盖眼疲劳缓解、视力养护、眼部抗衰等全场景需求。</p>
+                    <p>依托佰氏健康在<strong>眼部健康研究院</strong>的专业资源，为客户提供学术背书+产品定制的完整解决方案。</p>
+                    <div class="product-features">
+                        <span class="product-feature-tag">眼疲劳缓解</span>
+                        <span class="product-feature-tag">视力养护</span>
+                        <span class="product-feature-tag">眼部抗衰</span>
+                        <span class="product-feature-tag">研究院背书</span>
+                        <span class="product-feature-tag">OEM/ODM代工</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 二类医疗器械/特证 -->
+    <section class="product-detail-section fade-up" id="medical">
+        <div class="container">
+            <div class="product-detail-inner">
+                <div class="product-icon-large" style="background: linear-gradient(135deg, #fff3e0, #ffe0b2);">🏥</div>
+                <div class="product-detail-text">
+                    <span class="section-tag">核心板块 · 批文最快</span>
+                    <h3>二类医疗器械 / 特证</h3>
+                    <p>拥有<strong>160+二类医疗器械批文</strong>，批文备案最快<strong>10-20天</strong>，是行业内批文最全、下证最快的工厂之一。</p>
+                    <p>同时拥有200+国妆特证（含30+防脱育发批文），为客户提供从消字号、健字号到械字号、特证的全资质产品矩阵。</p>
+                    <div class="product-features">
+                        <span class="product-feature-tag">160+二械批文</span>
+                        <span class="product-feature-tag">200+国妆特证</span>
+                        <span class="product-feature-tag">30+防脱育发</span>
+                        <span class="product-feature-tag">批文10-20天</span>
+                        <span class="product-feature-tag">全国控价保护</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 双品牌战略 -->
+    <section class="section" style="background: #f7f9f7;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">双品牌战略</span>
+                <h2 class="section-title">20+一线大牌联合赋能</h2>
+                <p class="section-desc">南京同仁堂 · 白云山 · 国药集团 · 敬修堂 · 桂林三金 · 江中 · 黄飞鸿 · 精武陈真</p>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px; margin-top:48px;">
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">🏥</div>
+                    <div style="font-size:14px; font-weight:700;">南京同仁堂</div>
+                </div>
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">🌿</div>
+                    <div style="font-size:14px; font-weight:700;">白云山</div>
+                </div>
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">💊</div>
+                    <div style="font-size:14px; font-weight:700;">国药集团</div>
+                </div>
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">🏛️</div>
+                    <div style="font-size:14px; font-weight:700;">敬修堂</div>
+                </div>
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">🌿</div>
+                    <div style="font-size:14px; font-weight:700;">桂林三金</div>
+                </div>
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">🍃</div>
+                    <div style="font-size:14px; font-weight:700;">江中</div>
+                </div>
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">🥋</div>
+                    <div style="font-size:14px; font-weight:700;">黄飞鸿</div>
+                </div>
+                <div style="background:#fff; border-radius:var(--radius); padding:24px; text-align:center; box-shadow:var(--shadow);">
+                    <div style="font-size:32px; margin-bottom:8px;">🥊</div>
+                    <div style="font-size:14px; font-weight:700;">精武陈真</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">佰</div>
+                        <span>佰氏健康集团</span>
+                    </div>
+                    <p>24年深耕大健康，8大生产基地，全链路智慧型智造基地。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="factory.html">工厂实力</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 广州市白云区鹤龙街康庄路1号龙溪中心6楼</li>
+                        <li>📞 150-1180-3999</li>
+                        <li>📧 service@baishihealth.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p>扫码关注官方微信，获取最新行业资讯</p>
+                    <div class="qr-placeholder">微信二维码</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 佰氏健康集团 版权所有 | <a href="en.html">English</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

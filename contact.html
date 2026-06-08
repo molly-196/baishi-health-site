@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 佰氏健康集团</title>
+    <meta name="description" content="联系佰氏健康集团，预约工厂考察，咨询OEM/ODM合作，获取产品报价。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .contact-hero { background: linear-gradient(135deg, #1B5E20, #1565C0); }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding: 100px 0;
+        }
+        .contact-info-card {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 40px 32px;
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+        }
+        .contact-info-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+        .contact-item-icon {
+            font-size: 24px;
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: rgba(46, 125, 50, 0.08);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-item-text h4 { font-size: 15px; font-weight: 700; margin-bottom: 2px; }
+        .contact-item-text p { font-size: 14px; color: var(--text-second); line-height: 1.8; }
+        .contact-form {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 40px 32px;
+            box-shadow: var(--shadow);
+        }
+        .contact-form h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        .form-group { margin-bottom: 20px; }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 15px;
+            font-family: var(--font);
+            transition: var(--transition);
+            background: #fff;
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.12);
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .map-section { padding: 0 0 100px; }
+        .map-placeholder {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #E8F5E9, #BBDEFB);
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--text-second);
+        }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; gap: 40px; padding: 60px 0; }
+            .form-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-contact">
+                    <span>📞 +86 150-1180-3999</span>
+                    <span>📧 <span data-cms="email">baishihealth@gmail.com</span></span>
+                </div>
+                <div class="top-links">
+                    <a href="en.html">English</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">佰</div>
+                    <div class="logo-text">
+                        <span class="logo-main">佰氏健康集团</span>
+                        <span class="logo-sub">BAISHI HEALTH GROUP</span>
+                    </div>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="factory.html">工厂实力</a></li>
+                    <li><a href="clients.html">合作客户</a></li>
+                    <li><a href="contact.html" class="active">联系我们</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero contact-hero">
+        <div class="container">
+            <h1>联系我们</h1>
+            <p>期待与您合作，共创健康未来</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="contact-grid">
+            <!-- 左侧联系信息 -->
+            <div>
+                <div class="contact-info-card fade-up">
+                    <h3>联系方式</h3>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div class="contact-item-text">
+                            <h4>公司地址</h4>
+                            <p>广州市白云区鹤龙街康庄路1号龙溪中心6楼</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📞</div>
+                        <div class="contact-item-text">
+                            <h4>服务热线</h4>
+                            <p>150-1180-3999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📧</div>
+                        <div class="contact-item-text">
+                            <h4>电子邮箱</h4>
+                            <p>service@baishihealth.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🕐</div>
+                        <div class="contact-item-text">
+                            <h4>工作时间</h4>
+                            <p>周一至周五 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="contact-info-card fade-up">
+                    <h3>OEM/ODM合作咨询</h3>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📱</div>
+                        <div class="contact-item-text">
+                            <h4>项目经理</h4>
+                            <p>150-1180-3999（微信同号）</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon">💬</div>
+                        <div class="contact-item-text">
+                            <h4>微信咨询</h4>
+                            <p>添加微信号：baishihealth</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+
+            <!-- 右侧表单 -->
+            <div class="contact-form fade-up">
+                <h3>在线留言</h3>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>姓名 *</label>
+                            <input type="text" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label>手机号码 *</label>
+                            <input type="tel" name="phone" required placeholder="请输入手机号码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>咨询类型</label>
+                        <select name="type">
+                            <option value="oem" selected>OEM/ODM合作咨询</option>
+                            <option value="formula">配方定制咨询</option>
+                            <option value="factory">工厂考察预约</option>
+                            <option value="quote">产品报价咨询</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>留言内容</label>
+                        <textarea name="message" placeholder="请描述您的需求（产品品类/预计订单量/交付时间等），我们将在24小时内回复"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;">提交留言</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 地图 -->
+    <div class="container">
+        <div class="map-section">
+            <div class="map-placeholder">
+                📍 地图位置 · 广州市白云区鹤龙街康庄路1号龙溪中心
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">佰</div>
+                        <span>佰氏健康集团</span>
+                    </div>
+                    <p>成立于2009年，专注大健康产业OEM/ODM一站式服务。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="factory.html">工厂实力</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 广州市白云区鹤龙街康庄路1号龙溪中心</li>
+                        <li>📞 150-1180-3999</li>
+                        <li>📧 baishihealth@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p>扫码关注官方微信，获取最新行业资讯和配方动态</p>
+                    <div class="qr-placeholder">微信二维码</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 佰氏健康集团 版权所有 | <a href="en.html">English</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            btn.textContent = '提交中...';
+            btn.disabled = true;
+            setTimeout(() => {
+                alert('感谢您的留言！我们的项目经理将在24小时内与您联系。');
+                e.target.reset();
+                btn.textContent = '提交留言';
+                btn.disabled = false;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工厂实力 - 佰氏健康集团</title>
+    <meta name="description" content="佰氏健康集团8大生产基地全览：广州智能总部、江西中科、广州从化、广西防城港、广州四会、河南郑州、广州花都、山西康必健。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .factory-hero { background: linear-gradient(135deg, #0d1b0f, #1B5E20); }
+        .factory-detail { padding: 80px 0; }
+        .factory-detail:nth-child(odd) { background: #f7f9f7; }
+        .factory-detail-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .factory-detail:nth-child(odd) .factory-detail-inner { direction: rtl; }
+        .factory-detail:nth-child(odd) .factory-detail-inner > * { direction: ltr; }
+        .factory-img {
+            width: 100%; height: 360px;
+            background: linear-gradient(135deg, rgba(46,125,50,0.08), rgba(21,101,192,0.08));
+            border-radius: var(--radius);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 80px;
+        }
+        .factory-detail-text h3 { font-size: 24px; font-weight: 700; margin-bottom: 16px; }
+        .factory-detail-text p { font-size: 15px; color: var(--text-second); line-height: 1.9; margin-bottom: 16px; }
+        .factory-tag {
+            display: inline-block;
+            background: rgba(46,125,50,0.08);
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .factory-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .factory-stat {
+            background: #fff;
+            border-radius: 10px;
+            padding: 16px 12px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .factory-stat-num {
+            font-size: 28px; font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .factory-stat-label { font-size: 12px; color: var(--text-second); margin-top: 4px; }
+        @media (max-width: 768px) {
+            .factory-detail-inner { grid-template-columns: 1fr; gap: 32px; }
+            .factory-detail:nth-child(odd) .factory-detail-inner { direction: ltr; }
+            .factory-img { height: 240px; }
+            .factory-stats { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-contact">
+                    <span>📞 <span data-cms="phone">150-1180-3999</span></span>
+                    <span>📧 <span data-cms="email">service@baishihealth.com</span></span>
+                </div>
+                <div class="top-links">
+                    <a href="en.html">English</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">佰</div>
+                    <div class="logo-text">
+                        <span class="logo-main">佰氏健康集团</span>
+                        <span class="logo-sub">BAISHI HEALTH GROUP</span>
+                    </div>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="factory.html" class="active">工厂实力</a></li>
+                    <li><a href="clients.html">合作客户</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero factory-hero">
+        <div class="container">
+            <h1>8大智造基地</h1>
+            <p>全域布局 · 十万级净化车间 · 全品类合规资质</p>
+        </div>
+    </section>
+
+    <!-- 广州智能总部工厂 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">🏭</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">核心基地</span>
+                    <h3>广州智能总部工厂（在建）</h3>
+                    <p>位于白云民营科技园核心区域江高镇，建筑面积达<strong>5万㎡以上</strong>，总投资超过<strong>2亿元</strong>，2025年2月开工建设，预计2027年建成并投入使用，将成为一座全自动智能制造工厂。</p>
+                    <p>建成后将集研发、生产、仓储、物流于一体，成为佰氏健康全产业链智造的核心引擎。</p>
+                    <div>
+                        <span class="factory-tag">📐 5万㎡+</span>
+                        <span class="factory-tag">💰 投资2亿+</span>
+                        <span class="factory-tag">🤖 全自动智能</span>
+                        <span class="factory-tag">📅 2027年投产</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 江西中科基地 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">🌿</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">江西基地</span>
+                    <h3>江西中科基地</h3>
+                    <p>佰氏健康在江西自主拿地建设的<strong>主要生产基地</strong>，占地<strong>68亩</strong>，标准厂房建筑面积<strong>7万多㎡</strong>，配备<strong>2万多㎡十万级国际标准无菌净化生产车间</strong>，设备一流。</p>
+                    <p>基地专注于大健康生物医药和医美产业，涵盖妆字号、消字号、械字号等产品类别，为品牌方提供完善的供应链体系。</p>
+                    <div>
+                        <span class="factory-tag">📐 68亩</span>
+                        <span class="factory-tag">🏥 10万级净化车间</span>
+                        <span class="factory-tag">💊 妆/消/械全品类</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 广州从化基地 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">🧴</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">广州基地</span>
+                    <h3>广州中科佰氏（从化）</h3>
+                    <p>佰氏健康在广州投资的首家工厂，位于从化区，<strong>主要生产化妆品和消字号产品</strong>，拥有完整的妆字号生产资质和成熟生产线。</p>
+                    <div>
+                        <span class="factory-tag">🧴 化妆品</span>
+                        <span class="factory-tag">🧼 消字号</span>
+                        <span class="factory-tag">✅ 妆字号资质</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 广西防城港基地 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">🌴</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">广西基地</span>
+                    <h3>广西防城港生产基地</h3>
+                    <p>2025年5月正式启动，依托广西边境区位优势，拓展<strong>东南亚市场</strong>，专注植物提取和高功效护肤品的生产，形成差异化竞争优势。</p>
+                    <div>
+                        <span class="factory-tag">🌏 东南亚市场</span>
+                        <span class="factory-tag">🌱 植物提取</span>
+                        <span class="factory-tag">🧴 护肤品专线</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 广州四会医械厂 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">🏥</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">医械基地</span>
+                    <h3>广州四会医疗器械工厂</h3>
+                    <p>专注<strong>二类医疗器械</strong>生产，批文备案最快<strong>10-20天</strong>，是佰氏健康在械字号领域的重要布局，拥有160+二类医疗器械批文资源。</p>
+                    <div>
+                        <span class="factory-tag">🏥 二类医疗器械</span>
+                        <span class="factory-tag">⚡ 批文10-20天</span>
+                        <span class="factory-tag">📋 160+二械批文</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 河南郑州基地 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">💊</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">郑州基地</span>
+                    <h3>河南郑州健字号/痛症基地</h3>
+                    <p>专注<strong>健字号和痛症类产品</strong>生产，服务线下连锁渠道，配合佰氏健康在疼痛养护赛道的完整产品矩阵，为连锁品牌提供专业供应链支持。</p>
+                    <div>
+                        <span class="factory-tag">💊 健字号</span>
+                        <span class="factory-tag">💊 痛症产品</span>
+                        <span class="factory-tag">🏪 线下连锁</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 广州花都基地 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">🧃</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">花都基地</span>
+                    <h3>广州花都特一健康产业基地</h3>
+                    <p>专注<strong>口服类产品</strong>生产，配合佰氏健康100+健字号批文资源，提供口服大健康产品的完整生产与供应链服务。</p>
+                    <div>
+                        <span class="factory-tag">🧃 口服类产品</span>
+                        <span class="factory-tag">💊 100+健字号</span>
+                        <span class="factory-tag">📦 云仓代发</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 山西康必健 -->
+    <section class="factory-detail fade-up">
+        <div class="container">
+            <div class="factory-detail-inner">
+                <div class="factory-img">🏔️</div>
+                <div class="factory-detail-text">
+                    <span class="section-tag">山西基地</span>
+                    <h3>山西康必健集团（并购）</h3>
+                    <p>2023年投资并购，合并湖南健医师，成为<strong>全国械二批文最多的工厂</strong>，拥有完整的二类医疗器械生产资质，批文资源丰富。</p>
+                    <div>
+                        <span class="factory-tag">🏥 全国械二批文最多</span>
+                        <span class="factory-tag">🤝 并购整合</span>
+                        <span class="factory-tag">📋 完整二械资质</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon">佰</div>
+                        <span>佰氏健康集团</span>
+                    </div>
+                    <p>24年深耕大健康，8大生产基地，全链路智慧型智造基地。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="oem-service.html">OEM/ODM服务</a></li>
+                        <li><a href="products.html">产品中心</a></li>
+                        <li><a href="factory.html">工厂实力</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 广州市白云区鹤龙街康庄路1号龙溪中心6楼</li>
+                        <li>📞 150-1180-3999</li>
+                        <li>📧 service@baishihealth.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <p>扫码关注官方微信，获取最新行业资讯</p>
+                    <div class="qr-placeholder">微信二维码</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 佰氏健康集团 版权所有 | <a href="en.html">English</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
