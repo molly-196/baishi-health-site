@@ -1,177 +1,76 @@
-# Decap CMS 配置文件
-# 使用 GitHub 作为后端
 backend:
   name: github
-  repo: baishi-health/baishi-health-cms  # 请替换为实际仓库地址
+  repo: molly-196/baishi-health-site
   branch: main
 
-# 自动生成预览（Vercel 部署时用）
-publish_mode: true
-local_backend: false
-
-# 媒体文件存储
-media_folder: "images"  # 存放在仓库 /images 目录
+media_folder: "images"
 public_folder: "images"
 
-# 内容集合（Collection）
 collections:
-
-  # ---- 全站通用配置 ----
   - name: "site_config"
     label: "全站配置"
     file: "site_config.json"
     fields:
-      - name: "phone"
-        label: "联系电话"
-        widget: "string"
-        default: "150-1180-3999"
-      - name: "email"
-        label: "电子邮箱"
-        widget: "string"
-        default: "service@baishihealth.com"
-      - name: "address"
-        label: "公司地址"
-        widget: "string"
-        default: "广州市白云区鹤龙街康庄路1号龙溪中心6楼"
-      - name: "wechat"
-        label: "微信ID"
-        widget: "string"
-        default: "baishihealth"
+      - { name: "phone", label: "联系电话", widget: "string", default: "150-1180-3999" }
+      - { name: "email", label: "电子邮箱", widget: "string", default: "service@baishihealth.com" }
+      - { name: "address", label: "公司地址", widget: "string", default: "广州市白云区鹤龙街康庄路1号龙禧中心6楼" }
+      - { name: "wechat", label: "微信ID", widget: "string", default: "baishihealth" }
 
-  # ---- 首页英雄区 ----
   - name: "hero_section"
     label: "首页英雄区"
     file: "content/hero_section.json"
     fields:
-      - name: "main_title"
-        label: "主标题"
-        widget: "string"
-        default: "大健康全链路智慧型智造基地"
-      - name: "sub_title"
-        label: "副标题"
-        widget: "string"
-        default: "想客户所想 · 做客户所需"
-      - name: "description"
-        label: "描述文字"
-        widget: "text"
-        default: "以全维硬核实力为基 · 以全生命周期赋能为核"
-      - name: "stat_1_num"
-        label: "数据1-数字"
-        widget: "number"
-        default: 8
-      - name: "stat_1_label"
-        label: "数据1-标签"
-        widget: "string"
-        default: "生产基地"
-      - name: "stat_2_num"
-        label: "数据2-数字"
-        widget: "number"
-        default: 300
-      - name: "stat_2_label"
-        label: "数据2-标签"
-        widget: "string"
-        default: "消字号批文"
-      - name: "stat_3_num"
-        label: "数据3-数字"
-        widget: "number"
-        default: 200
-      - name: "stat_3_label"
-        label: "数据3-标签"
-        widget: "string"
-        default: "国妆特证"
-      - name: "stat_4_num"
-        label: "数据4-数字"
-        widget: "number"
-        default: 160
-      - name: "stat_4_label"
-        label: "数据4-标签"
-        widget: "string"
-        default: "二械批文"
+      - { name: "main_title", label: "主标题", widget: "string", default: "大健康全链路智慧型智造基地" }
+      - { name: "sub_title", label: "副标题", widget: "string", default: "想客户所想 · 做客户所需" }
+      - { name: "description", label: "描述文字", widget: "text", default: "以全维硬核实力为基 · 以全生命周期赋能为核" }
+      - { name: "stat_1_num", label: "数据1-数字", widget: "number", default: 8 }
+      - { name: "stat_1_label", label: "数据1-标签", widget: "string", default: "生产基地" }
+      - { name: "stat_2_num", label: "数据2-数字", widget: "number", default: 300 }
+      - { name: "stat_2_label", label: "数据2-标签", widget: "string", default: "消字号批文" }
+      - { name: "stat_3_num", label: "数据3-数字", widget: "number", default: 200 }
+      - { name: "stat_3_label", label: "数据3-标签", widget: "string", default: "国妆特证" }
+      - { name: "stat_4_num", label: "数据4-数字", widget: "number", default: 160 }
+      - { name: "stat_4_label", label: "数据4-标签", widget: "string", default: "二械批文" }
 
-  # ---- 关于我们 ----
   - name: "about_page"
     label: "关于我们"
     file: "content/about_page.json"
     fields:
-      - name: "intro_title"
-        label: "简介标题"
-        widget: "string"
-        default: "想客户所想 · 做客户所需"
-      - name: "intro_text_1"
-        label: "简介段落1"
-        widget: "text"
-        default: "佰氏健康集团成立于2009年，总部位于广州市白云区，是一家集研发、生产、销售、品牌赋能于一体的大健康全链路智慧型智造基地。"
-      - name: "intro_text_2"
-        label: "简介段落2"
-        widget: "text"
-        default: "集团秉持客户第一、团队第二、合伙人第三的核心价值观，以健康千万人为使命，24年深耕大健康赛道，服务超过1000+品牌客户。"
+      - { name: "intro_title", label: "简介标题", widget: "string", default: "想客户所想 · 做客户所需" }
+      - { name: "intro_text_1", label: "简介段落1", widget: "text", default: "佰氏健康集团成立于2009年，总部位于广州市白云区，是一家集研发、生产、销售、品牌赋能于一体的大健康全链路智慧型智造基地。" }
+      - { name: "intro_text_2", label: "简介段落2", widget: "text", default: "集团秉持客户第一、团队第二、合伙人第三的核心价值观，以健康千万人为使命，24年深耕大健康赛道，服务超过1000+品牌客户。" }
 
-  # ---- 产品中心 ----
   - name: "products_page"
     label: "产品中心"
     file: "content/products_page.json"
     fields:
-      - name: "hero_title"
-        label: "页面主标题"
-        widget: "string"
-        default: "产品中心"
-      - name: "hero_desc"
-        label: "页面副标题"
-        widget: "string"
-        default: "四大核心板块 · 剂型最全 · 批文最全"
+      - { name: "hero_title", label: "页面主标题", widget: "string", default: "产品中心" }
+      - { name: "hero_desc", label: "页面副标题", widget: "string", default: "四大核心板块 · 剂型最全 · 批文最全" }
 
-  # ---- 工厂实力 ----
   - name: "factory_page"
     label: "工厂实力"
     file: "content/factory_page.json"
     fields:
-      - name: "hero_title"
-        label: "页面主标题"
-        widget: "string"
-        default: "8大智造基地"
-      - name: "hero_desc"
-        label: "页面副标题"
-        widget: "string"
-        default: "全域布局 · 十万级净化车间 · 全品类合规资质"
+      - { name: "hero_title", label: "页面主标题", widget: "string", default: "8大智造基地" }
+      - { name: "hero_desc", label: "页面副标题", widget: "string", default: "全域布局 · 十万级净化车间 · 全品类合规资质" }
 
-  # ---- OEM/ODM服务 ----
   - name: "oem_service_page"
     label: "OEM/ODM服务"
     file: "content/oem_service_page.json"
     fields:
-      - name: "hero_title"
-        label: "页面主标题"
-        widget: "string"
-        default: "全链路 OEM/ODM 服务"
-      - name: "hero_desc"
-        label: "页面副标题"
-        widget: "string"
-        default: "不只是代工，更是从选品到成交的全生命周期陪跑伙伴"
+      - { name: "hero_title", label: "页面主标题", widget: "string", default: "全链路 OEM/ODM 服务" }
+      - { name: "hero_desc", label: "页面副标题", widget: "string", default: "不只是代工，更是从选品到成交的全生命周期陪跑伙伴" }
 
-  # ---- 合作客户 ----
   - name: "clients_page"
     label: "合作客户"
     file: "content/clients_page.json"
     fields:
-      - name: "hero_title"
-        label: "页面主标题"
-        widget: "string"
-        default: "合作客户"
-      - name: "hero_desc"
-        label: "页面副标题"
-        widget: "string"
-        default: "已服务200+品牌客户，品质值得信赖"
+      - { name: "hero_title", label: "页面主标题", widget: "string", default: "合作客户" }
+      - { name: "hero_desc", label: "页面副标题", widget: "string", default: "已服务200+品牌客户，品质值得信赖" }
 
-  # ---- 联系我们 ----
   - name: "contact_page"
     label: "联系我们"
     file: "content/contact_page.json"
     fields:
-      - name: "hero_title"
-        label: "页面主标题"
-        widget: "string"
-        default: "联系我们"
-      - name: "hero_desc"
-        label: "页面副标题"
-        widget: "string"
-        default: "期待与您合作，共创健康未来"
+      - { name: "hero_title", label: "页面主标题", widget: "string", default: "联系我们" }
+      - { name: "hero_desc", label: "页面副标题", widget: "string", default: "期待与您合作，共创健康未来" }
